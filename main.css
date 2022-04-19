@@ -8,6 +8,8 @@
 	--purple: #8B5CF6;
 	--light: #EEE;
 	--bgcolor: #F5F3EA;
+	--scrollbar: #888888;
+	--scrollbar-hover: #555555;
 }
 
 * {
@@ -167,15 +169,15 @@ body::-webkit-scrollbar {
 }
 
 .body::-webkit-scrollbar-track {
-  background: rgb(249, 249, 249);
+  background: var(--bgcolor);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgb(85, 85, 85);
+  background: var(--scrollbar);
   border-radius: 200px;
   border: 4px solid var(--bgcolor);
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: rgb(136, 136, 136);
+  background: var(--scrollbar-hover);
   transition: 0.15s;
 }
