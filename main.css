@@ -161,3 +161,21 @@ color: black;
 	background-color: var(--bgcolor);
 	align-items: center;
 }
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+.body::-webkit-scrollbar-track {
+  background: rgb(249, 249, 249);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(85, 85, 85);
+  border-radius: 200px;
+  border: 4px solid var(--bgcolor);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136);
+  transition: 0.15s;
+}
